@@ -15,7 +15,10 @@ public class OrionInfraAwsApp {
         OrionRdsStack rdsStack = new OrionRdsStack(app, "Rds", vpcStack.getVpc());
         rdsStack.addDependency(vpcStack);
 
+        OrionServiceStack serviceStack = new OrionServiceStack(app, "Service", clusterStack.getCluster());
+        serviceStack.addDependency(clusterStack);
+        serviceStack.addDependency(rdsStack);
+
         app.synth();
     }
 }
-
