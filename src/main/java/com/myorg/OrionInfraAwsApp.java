@@ -9,6 +9,8 @@ public class OrionInfraAwsApp {
 
         OrionVpcStack vpcStack = new OrionVpcStack(app, "Vpc");
 
+        OrionClusterStack clusterStack = new OrionClusterStack(app, "Cluster", vpcStack.getVpc());
+        clusterStack.addDependency(vpcStack);
 
         app.synth();
     }
