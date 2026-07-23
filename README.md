@@ -18,6 +18,7 @@ Fluxo resumido da arquitetura:
 - O Auto Scaling ajusta a quantidade de tasks conforme a necessidade configurada.
 
 ![Imagem](https://drive.google.com/uc?export=view&id=1Ji9dwy94pvr0rvQ8Ycz9U9bgpMlvB1AX)
+![Imagem](https://drive.google.com/uc?export=view&id=1Y378brAXuZ7wWMNLh4GbWILIAjKx0lUQ)
 
 ## Serviços utilizados
 
